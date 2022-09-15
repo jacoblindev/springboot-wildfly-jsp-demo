@@ -1,4 +1,4 @@
-package ai.chat.wildflydemo;
+package com.jacoblindev.wildflydemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
