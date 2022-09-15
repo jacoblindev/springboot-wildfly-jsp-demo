@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import ai.chat.wildflydemo.model.Customer;
 import ai.chat.wildflydemo.repository.CustomerRepository;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 @RestController
-@Slf4j
+@Log4j2
 public class CustomerController {
     private CustomerRepository customerRepository;
 
