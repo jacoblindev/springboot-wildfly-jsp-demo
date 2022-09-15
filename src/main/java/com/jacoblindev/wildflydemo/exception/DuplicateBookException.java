@@ -1,6 +1,7 @@
-package ai.chat.wildflydemo.exception;
+package com.jacoblindev.wildflydemo.exception;
 
-import ai.chat.wildflydemo.model.Book;
+import com.jacoblindev.wildflydemo.model.Book;
+
 import lombok.Getter;
 
 @Getter

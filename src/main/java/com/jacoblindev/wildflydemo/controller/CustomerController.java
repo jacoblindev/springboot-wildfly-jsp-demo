@@ -1,4 +1,4 @@
-package ai.chat.wildflydemo.controller;
+package com.jacoblindev.wildflydemo.controller;
 
 import java.util.List;
 
@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import ai.chat.wildflydemo.model.Customer;
-import ai.chat.wildflydemo.repository.CustomerRepository;
+import com.jacoblindev.wildflydemo.model.Customer;
+import com.jacoblindev.wildflydemo.repository.CustomerRepository;
+
 import lombok.extern.log4j.Log4j2;
 
 @RestController

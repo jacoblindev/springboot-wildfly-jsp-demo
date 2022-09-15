@@ -1,8 +1,8 @@
-package ai.chat.wildflydemo.service;
+package com.jacoblindev.wildflydemo.service;
 
 import java.util.Collection;
 
-import ai.chat.wildflydemo.model.Book;
+import com.jacoblindev.wildflydemo.model.Book;
 
 public interface BookService {
     Collection<Book> getBooks();

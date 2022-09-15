@@ -1,10 +1,10 @@
-package ai.chat.wildflydemo.advice;
+package com.jacoblindev.wildflydemo.advice;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.ModelAndView;
 
-import ai.chat.wildflydemo.exception.DuplicateBookException;
+import com.jacoblindev.wildflydemo.exception.DuplicateBookException;
 
 @ControllerAdvice
 public class BookControllerAdvice {

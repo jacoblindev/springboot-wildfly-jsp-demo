@@ -1,4 +1,4 @@
-package ai.chat.wildflydemo.service;
+package com.jacoblindev.wildflydemo.service;
 
 import java.util.Collection;
 import java.util.Optional;
@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import ai.chat.wildflydemo.exception.DuplicateBookException;
-import ai.chat.wildflydemo.model.Book;
-import ai.chat.wildflydemo.model.BookData;
-import ai.chat.wildflydemo.repository.BookRepository;
+import com.jacoblindev.wildflydemo.exception.DuplicateBookException;
+import com.jacoblindev.wildflydemo.model.Book;
+import com.jacoblindev.wildflydemo.model.BookData;
+import com.jacoblindev.wildflydemo.repository.BookRepository;
 
 @Service
 public class BookServiceImpl implements BookService {

@@ -1,4 +1,4 @@
-package ai.chat.wildflydemo.repository;
+package com.jacoblindev.wildflydemo.repository;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Repository;
 
-import ai.chat.wildflydemo.model.BookData;
+import com.jacoblindev.wildflydemo.model.BookData;
 
 @Repository
 public class InMemoryBookRepository implements BookRepository {

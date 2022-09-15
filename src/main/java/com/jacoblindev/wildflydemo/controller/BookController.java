@@ -1,4 +1,4 @@
-package ai.chat.wildflydemo.controller;
+package com.jacoblindev.wildflydemo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.servlet.view.RedirectView;
 
-import ai.chat.wildflydemo.model.Book;
-import ai.chat.wildflydemo.service.BookService;
+import com.jacoblindev.wildflydemo.model.Book;
+import com.jacoblindev.wildflydemo.service.BookService;
 
 @Controller
 @RequestMapping("/book")

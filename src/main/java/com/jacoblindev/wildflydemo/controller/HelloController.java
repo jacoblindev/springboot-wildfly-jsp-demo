@@ -1,4 +1,4 @@
-package ai.chat.wildflydemo.controller;
+package com.jacoblindev.wildflydemo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,4 +1,4 @@
-package ai.chat.wildflydemo.model;
+package com.jacoblindev.wildflydemo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

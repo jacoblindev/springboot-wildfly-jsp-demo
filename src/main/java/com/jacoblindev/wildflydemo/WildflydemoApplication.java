@@ -1,4 +1,4 @@
-package ai.chat.wildflydemo;
+package com.jacoblindev.wildflydemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
