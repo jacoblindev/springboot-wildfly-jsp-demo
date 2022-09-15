@@ -1,40 +1,26 @@
-# Spring Boot + JSP + PostgreSQL + WildFly | Embeded Tomcat
+# Spring Boot + JSP + PostgreSQL + WildFly
 
 ## For Development
 
-### Using DevTool Live Reload & Embeded Tomcat
+- Start a local postgresql db for the app to connect with! Using ___docker___ to start the database:
 
-1, Make sure your `pom.xml` did __NOT__ excludes the following dependencies:
-
-``` xml
-...
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-web</artifactId>
-    <!-- <exclusions>
-        <exclusion>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            </exclusion>
-        <exclusion>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-        </exclusion>
-    </exclusions> -->
-</dependency>
-...
+``` docker
+docker run --name local-postgres -p 5432:5432 -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=password -e POSTGRES_DB=localdev -d postgres
 ```
 
-2, Make sure your `application.properties` 's database url is set to ___"localhost"___:
+- Make sure your `application.properties` 's database url is set to ___"localhost"___:
 
 ``` properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/localdev
 ```
 
-3, Last but not least, start a local postgresql db for the app to connect with!
+- Then run the following cmd to create/build a local server with WildFly:
 
-Using docker to start the database:
+``` sh
+mvn clean package   
 
-``` docker cmd
-docker run --name local-postgres -p 5432:5432 -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=password -e POSTGRES_DB=localdev -d postgres
+# Then run the server locally
+./target/server/bin/standalone.sh 
 ```
+
+- Finally, visit the link to test your site: [http://localhost:8080/contextName](http://localhost:8080/contextName)
